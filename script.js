@@ -33,3 +33,51 @@ OR
 ${enter}`;
 const gameOver5 = `You looked at the trap and the light BLINDED YOU! ${gameOver}`;
 const win = `The ghost trap sucked Slimer in and closed. CONGRATULATIONS! YOU CAUGHT SLIMER!!!`;
+
+// Alerts Used For The Game
+alert(start);
+
+// Set's the value of userInput to the user's entry.
+let userInput = prompt(q1);
+
+// First Conditional Statement
+// Prompt returns the value entered as a string. That is why double equals "==" is used instead of triple equals "==="
+if (userInput == 1) {
+prompt(q2);
+
+// Second Conditional Statement
+if (userInput == 1) {
+    userInput = prompt(q3);
+    
+// Third Conditonal Statement
+if (userInput == 2) {
+    userInput = prompt(q4);
+
+// Fourth Conditional Statement
+if (userInput == 1) {
+    userInput = prompt(q5);
+
+// Fifth Conditional Statement
+if (userInput == 2) {
+    alert(win);
+} else {
+    alert(gameOver5);
+}
+
+} else {
+    alert(gameOver4);
+}
+
+
+} else {
+    alert(gameOver3);
+}
+
+} else {
+        alert(gameOver2);
+    }
+
+} else {
+    alert(gameOver1);
+}
+
